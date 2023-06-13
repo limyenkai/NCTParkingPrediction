@@ -226,7 +226,7 @@ def predict():
     data = {'Day': day, 'Weekday': weekday, 'Hour': hour, 'Minute': minute}  
     df = pd.DataFrame(data, index = [0])
 
-    prefix = "./Parking Occupancy Prediction Models/"                       # prefix of file location of prediction model
+    prefix = "App/Parking Occupancy Prediction Models/"                       # prefix of file location of prediction model
 
     parking_lot = []
     parking_percentage = []
@@ -444,12 +444,14 @@ lowest_PO_box.pack()
 lowest_PO_box.place(relx=0.63,
                     rely=0.65)
 
-image = Image.open("Creator.jpg")
-resize_image = image.resize((106, 136))
-img = ImageTk.PhotoImage(resize_image)
-image = tk.Label(root, image = img)
-image.place(relx=0.09,
-            rely=0.6)
+# Insert image
+
+# image = Image.open("Creator.jpg")
+# resize_image = image.resize((106, 136))
+# img = ImageTk.PhotoImage(resize_image)
+# image = tk.Label(root, image = img)
+# image.place(relx=0.09,
+#             rely=0.6)
 
 creator_label = tk.Label(root, text='Created By: Lim Yen Kai (2022)')
 creator_label.config(font=('ariel', 10))
